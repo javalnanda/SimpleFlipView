@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleFlipView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ci-d5-qK9" customClass="SimpleFlipView" customModule="SimpleFlipView" customModuleProvider="target">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.88665971389999998" green="0.88665971389999998" blue="0.88665971389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHK-Qn-npm" customClass="SimpleFlipView" customModule="SimpleFlipView" customModuleProvider="target">
+                                <rect key="frame" x="67" y="430" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="zbW-0p-RQv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UHK-Qn-npm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="0SQ-yC-ore"/>
+                            <constraint firstItem="6Ci-d5-qK9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JxL-75-KJ5"/>
+                            <constraint firstItem="6Ci-d5-qK9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WEt-0U-zXg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UHK-Qn-npm" secondAttribute="trailing" constant="52" id="Z5p-fF-TdE"/>
+                            <constraint firstItem="6Ci-d5-qK9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="249" id="Zrm-Rt-Qco"/>
+                            <constraint firstItem="6Ci-d5-qK9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="jTH-i5-6aG"/>
+                            <constraint firstItem="UHK-Qn-npm" firstAttribute="top" secondItem="6Ci-d5-qK9" secondAttribute="bottom" constant="33" id="sLv-jf-fGr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="BzS-Ti-PSk" id="hLG-eq-sba"/>
+                        <outlet property="frontView" destination="DwN-Jx-xqc" id="dgg-Vv-b3I"/>
+                        <outlet property="sbFlipView" destination="6Ci-d5-qK9" id="dTM-4Y-rv2"/>
+                        <outlet property="sbSecondFlipView" destination="UHK-Qn-npm" id="kNa-yN-6pB"/>
+                        <outlet property="secondFvBackView" destination="M0l-o6-rJN" id="3kn-dY-aAR"/>
+                        <outlet property="secondFvFrontView" destination="9b5-dX-bn2" id="1eB-su-Fij"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="DwN-Jx-xqc">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.052482762049999999" green="0.75817189730000001" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="BzS-Ti-PSk">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.58737376620000004" blue="0.061042602729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="9b5-dX-bn2">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.58257156190236137" blue="0.62963740543428348" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="M0l-o6-rJN">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.8281574235825635" green="0.26283322711028922" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-220" y="-198"/>
+        </scene>
+    </scenes>
+</document>
