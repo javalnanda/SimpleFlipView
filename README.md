@@ -10,7 +10,7 @@ SimpleFlipView provides a way to switch between two views with various transitio
 
 Copy SimpleFlipView.swift file into your project.
 
-Adding view programmatically
+1) Adding SimpleFlipView programmatically
 
 ```
 // Adding SimpleFlipView programmatically
@@ -28,7 +28,8 @@ Adding view programmatically
         self.view .addSubview(flipView)
 ```
 
-To add via Storyboard:
+2) To SimpleFlipView via Storyboard follow these steps:
+
 1) Add UIView on your storyboard's View Controller Scene. 
 2) Set its class as SimpleFlipView.
 3) Connect the outlet for SimpleFlipView
