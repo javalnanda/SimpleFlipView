@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         viewOne.backgroundColor = UIColor.yellow
         viewTwo.backgroundColor = UIColor.blue
         
-        let flipView = SimpleFlipView.init(frame: CGRect(origin: CGPoint(x: 130, y: 100), size: CGSize(width: 100, height: 100)))
+        let flipView = SimpleFlipView.init(frame: CGRect(origin: CGPoint(x: 115, y: 100), size: CGSize(width: 100, height: 100)))
         flipView.frontView = viewOne
         flipView.backView = viewTwo
         flipView.transitionStyle = UIViewAnimationOptions.transitionCurlUp

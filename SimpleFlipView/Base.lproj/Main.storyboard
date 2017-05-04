@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,8 +22,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ci-d5-qK9" customClass="SimpleFlipView" customModule="SimpleFlipView" customModuleProvider="target">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <rect key="frame" x="67" y="328" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.88665971389999998" green="0.88665971389999998" blue="0.88665971389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="3GF-dh-RE4"/>
+                                    <constraint firstAttribute="width" constant="240" id="p9p-dm-mtA"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
                                         <real key="value" value="1"/>
@@ -32,21 +35,19 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHK-Qn-npm" customClass="SimpleFlipView" customModule="SimpleFlipView" customModuleProvider="target">
-                                <rect key="frame" x="67" y="430" width="240" height="128"/>
+                                <rect key="frame" x="67" y="489" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8rZ-pa-LC1"/>
                                     <constraint firstAttribute="height" constant="128" id="zbW-0p-RQv"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="UHK-Qn-npm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="0SQ-yC-ore"/>
+                            <constraint firstItem="UHK-Qn-npm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Od-cc-aT7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UHK-Qn-npm" secondAttribute="bottom" constant="50" id="98o-uv-Tuc"/>
                             <constraint firstItem="6Ci-d5-qK9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JxL-75-KJ5"/>
-                            <constraint firstItem="6Ci-d5-qK9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WEt-0U-zXg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UHK-Qn-npm" secondAttribute="trailing" constant="52" id="Z5p-fF-TdE"/>
-                            <constraint firstItem="6Ci-d5-qK9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="249" id="Zrm-Rt-Qco"/>
-                            <constraint firstItem="6Ci-d5-qK9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="jTH-i5-6aG"/>
                             <constraint firstItem="UHK-Qn-npm" firstAttribute="top" secondItem="6Ci-d5-qK9" secondAttribute="bottom" constant="33" id="sLv-jf-fGr"/>
                         </constraints>
                     </view>
