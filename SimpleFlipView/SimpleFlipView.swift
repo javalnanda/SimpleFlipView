@@ -28,7 +28,7 @@ class SimpleFlipView: UIView {
     var animationDuration: Double = 0.5
     
     // Set transition option
-    var transitionStyle: UIViewAnimationOptions = UIViewAnimationOptions.transitionFlipFromRight
+    var transitionStyle: UIView.AnimationOptions = .transitionFlipFromRight
     
     override init(frame: CGRect) {
         super.init(frame: frame)

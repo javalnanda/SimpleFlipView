@@ -33,19 +33,19 @@ class ViewController: UIViewController {
         let flipView = SimpleFlipView.init(frame: CGRect(origin: CGPoint(x: 115, y: 100), size: CGSize(width: 100, height: 100)))
         flipView.frontView = viewOne
         flipView.backView = viewTwo
-        flipView.transitionStyle = UIViewAnimationOptions.transitionCurlUp
+        flipView.transitionStyle = .transitionCurlUp
         self.view .addSubview(flipView)
         
         // Setting up SimpleFlipView added via Storyboard
         sbFlipView.frontView = self.frontView
         sbFlipView.backView = self.backView
-        sbFlipView.transitionStyle = UIViewAnimationOptions.transitionFlipFromLeft
+        sbFlipView.transitionStyle = .transitionFlipFromLeft
         
         // Setting up second SimpleFlipView added via Storyboard
         sbSecondFlipView.frontView = self.secondFvFrontView
         sbSecondFlipView.backView = self.secondFvBackView
         sbSecondFlipView.animationDuration = 1.0
-        sbSecondFlipView.transitionStyle = UIViewAnimationOptions.transitionCrossDissolve
+        sbSecondFlipView.transitionStyle = .transitionCrossDissolve
         
     }
 
