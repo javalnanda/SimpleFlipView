@@ -1,3 +1,5 @@
+Please note: This repository is currently unmaintained
+
 # SimpleFlipView
 
 SimpleFlipView provides a way to switch between two views with various transition animation like flip, dissolve, curl.
